@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="registration" action="#" method="post" >
+        <p><input id ="mylog" type="text"/><small style="margin-left:5px">Login</small></p>
+        <p><input id="pswd" type="text"/><small style="margin-left:5px">Password</small></p>
+        <p><input id="phone" type="text"/><small style="margin-left:5px">Phone number</small></p>
+        <p><input id="submit" type="submit"  value="Submit" />
+</form>
+
+    <script>
+        var form = document.getElementById('registration');
+        var log = document.getElementById('mylog');
+        var pswd = document.getElementById('pswd');
+        var phone = document.getElementById('phone');
+
+
+        form.onsubmit = function (e) {
+            var loginText = log.value;
+            var pswdText = pswd.value;
+            var phoneText = phone.value;
+
+            var logSuccess = validateLogin(loginText);
+            var pswdSuccess = validatePassword(pswdText);
+            var phoneSuccess = validatePhone(phoneText);
+
+            fillColor(log, logSuccess);
+            fillColor(pswd, pswdSuccess);
+            fillColor(phone, phoneSuccess);
+
+            if ((!logSuccess) || (!pswdSuccess) || (!phoneSuccess)) {
+                e.preventDefault();
+            } else {
+                alert('Succesful');
+            }
+        }
+
+        function validatePassword(pswdText) {
+            return (pswdText.match(/\$/) != null || pswdText == '') ? false : true;
+        }
+
+        function fillColor(element, value) {
+            return value ? element.style.backgroundColor = 'white' : element.style.backgroundColor = 'red';
+        }
+
+        function validateLogin(loginText) {
+            return (loginText.match(/\d/) != null || loginText == '') ? false : true;
+        }
+
+        function validatePhone(phoneText) {
+            return (phoneText == '' || countOfNumbers(phoneText) != phoneText.length) ? false : true;
+        }
+
+        function countOfNumbers(phoneText) {
+            return (phoneText.match(/\d/g) == null) ? 0 : phoneText.match(/\d/g).length;
+        }
+
+
+    </script>
+</body>
+</html>

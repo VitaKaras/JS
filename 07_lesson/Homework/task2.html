@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        a {
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            color: #fff;
+            background-color: coral;
+            border: 1px solid #86af49;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 2;
+           
+        }
+        .elem {
+            position: absolute;
+            padding: 10px 20px;
+            border: 1px solid darkred;
+            border-radius: 8px;
+            text-align: center;
+            color: brown;
+            background-color: aliceblue ;
+        }
+    </style>
+</head>
+<body>
+   Создайте функцию positionAt(anchor, position, elem), которая позиционирует элемент elem, в зависимости от значения аргумента position: сверху ("top"), справа ("right") или снизу ("bottom"). Функция должна проводить позиционирование относительно элемента anchor. Для решения данной задачи Вам понадобится создать элемент anchor (тег а) и elem (тег div).
+    <a href="https://learn.javascript.ru/">Link</a>
+
+    <div class="elem">
+        Современный учебник Javascript
+    </div>
+
+    <script>
+        function positionAt(anchor, position, elem) {
+            var anchorCoordinates = anchor.getBoundingClientRect(); 
+            switch(position) {
+                case 'top':
+                    elem.style.top = anchorCoordinates.top - elem.offsetHeight + 'px';
+                    elem.style.left = anchorCoordinates.left + 'px';
+                    break;
+                case 'right':
+                    elem.style.left = anchorCoordinates.left + anchor.offsetWidth + 'px';
+                     elem.style.top = anchorCoordinates.top + 'px';
+                    break;
+                case 'bottom':
+                    elem.style.top = anchorCoordinates.top + anchor.offsetHeight + 'px';
+                    elem.style.left = anchorCoordinates.left + 'px';
+                    break;
+            }
+            document.body.appendChild(elem);
+        }
+        var anchor = document.getElementsByTagName('a')[0];
+        var message = document.querySelector('.elem');
+        //positionAt(anchor, 'top', message);
+        //positionAt(anchor, 'right', message);
+        positionAt(anchor, 'bottom', message);
+    </script>
+</body>
+</html>

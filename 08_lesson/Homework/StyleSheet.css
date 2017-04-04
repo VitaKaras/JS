@@ -1,0 +1,37 @@
+﻿
+
+#calculator {
+    width: 400px;
+    height: 198px;
+    background-color: #BF7130;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#field1, #field2 {
+    display: inline-block;
+    width: 45%;
+    margin: 6px;
+    height: 20px;
+    text-align: right;
+}
+
+input[type = "button"] {
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #FF7400;
+    font-weight: bold;
+    background-color: #FF9640;
+}
+#buttons {
+    width: 394px;
+    margin: auto;
+    height: 155px;
+    background-color: #FFB273;
+    border: 2px solid black;
+}
+#resultButton {
+    width: 97%;
+}

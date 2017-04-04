@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <button id = "button" type="button">Click on me!</button>
+
+    <script>
+        var divPos;
+        button.onclick = function () {
+            var previousPos = divPos - 1;
+            var countDivs = document.body.querySelectorAll('div').length - 1;
+
+            if (previousPos == countDivs || isNaN(previousPos))
+                divPos = 0;
+            
+            var currentDiv = document.body.children[divPos++];
+            currentDiv.style.backgroundColor = "red";          
+
+            var previousDiv = document.body.children[previousPos];
+            previousDiv.style.backgroundColor = "green";
+            
+        };
+
+       
+    </script>
+</body>
+</html>

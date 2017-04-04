@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <style>
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <p>К-сть рядків</p><input type="text" id="label1" />
+    <p>К-сть стовпців</p><input type="tetx" id="label2" /><br><br>
+    <input type="button"  id="btn" value="Створити таблицю" /><br><br>
+    
+    <script>
+        document.getElementById('btn').addEventListener("click", function(){
+            var rowsCount = label1.value;
+            var cellsCount = label2.value;
+            var fragmentRows = document.createDocumentFragment();
+            var fragmentCells = document.createDocumentFragment();
+            var rows = [];
+            var cells = [];
+            if ( rowsCount == "" && cellsCount== "")
+            { 
+                alert("Не заповнені поля!");
+                return;
+            }
+            for( var i = 0; i < rowsCount; i++){
+                rows[i] = document.createElement('tr');
+                for(var j = 0; j < cellsCount; j++) {
+                    cells[j] = document.createElement('td');
+                    if ((i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0))
+                        fillColor(cells[j]);
+                    fragmentCells.appendChild(cells[j]);
+                }
+                fragmentRows.appendChild(rows[i]).appendChild(fragmentCells);
+            }
+            var table = document.createElement('table');
+            
+            table.appendChild(fragmentRows);
+            document.body.appendChild(table);
+
+            var br = document.createElement('br');
+            document.body.appendChild(br);
+        });
+
+        function fillColor(elem){
+            elem.style.backgroundColor = 'black'; 
+        }
+    </script>
+</body>
+</html>

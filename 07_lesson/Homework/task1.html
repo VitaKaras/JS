@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>HW Task 1</title>
+     <style>
+         div {
+            width: 100px;
+            height: 100px;
+         }
+         .div1 {
+            background-color: yellow;
+         }
+         .div2 {
+            background-color: red;
+         }
+         .div3 {
+            background-color: blue;
+         }
+     </style>
+ </head>
+ <body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+
+<script>
+    var divs = document.querySelectorAll('div');
+    function moveDiv() {
+        for(var i = 0; i < divs.length; i++) {
+            divs[i].style.margin = Math.floor(Math.random()*150)+'px';
+        }
+    }
+    var timer = setInterval(moveDiv, 1000);
+</script>
+ </body>
+ </html> 

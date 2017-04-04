@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <script>
+  	var timer = prompt("Ведите число: ", 0);
+	function printTime(timer){
+		var i = timer;
+		var timerId = setInterval(function(){
+			document.write(i-- + " ");
+			if(i < 0) clearInterval(timerId);		
+		}, 100);
+	};
+	printTime(timer);
+	alert("Oтсчет закончен")
+	</script>
+</body>
+</html>

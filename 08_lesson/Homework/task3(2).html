@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <div id="calculator">
+        <form>
+            <input type="text" id="field1" />
+            <input type="text" id="field2" /> <br />
+            <div id="buttons">
+                <input type="button" value="C" id="key1" />
+                <input type="button" value="+" id="key2" />
+                <input type="button" value="-" id="key3" /><br />
+                <input type="button" value="*" id="key4" />
+                <input type="button" value="/" id="key5" />
+                <input type="button" value="%" id="key6" /><br />
+                <input type="button" value="=" id="resultButton" />
+            </div>
+            <script>
+                var result;
+
+                key1.addEventListener("click", function () {
+                    field1.value = 0;
+                    field2.value = 0;
+                });
+             
+                key2.addEventListener("click", function () {
+                    result = +field1.value + +field2.value;
+                    alert(result);
+                });
+
+                key3.addEventListener("click", function () {
+                    result = +field1.value - +field2.value;
+                });
+
+                key4.addEventListener("click", function () {
+                    result = +field1.value * +field2.value;
+                });
+
+                key5.addEventListener("click", function () {
+                    if (field2.value == 0)
+                        alert("Incorrect input in field 2!");
+                    else
+                        result = +field1.value / +field2.value;
+                });
+
+                key6.addEventListener("click", function () {
+                    result = +field1.value % +field2.value;
+                });
+
+                resultButton.addEventListener("click", function () {
+                    alert('Result: ' + result);
+                });
+            </script>
+
+
+        </form>
+    </div>
+
+</body>
+</html>

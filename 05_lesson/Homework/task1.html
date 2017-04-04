@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <script>
+    var expr, res;
+    
+    while (true) {
+      expr = prompt("Введите выражение?", '2-');
+      if (expr == null) break;
+    
+      try {
+        res = eval(expr);
+        if(res == "Infinity"){
+          throw "Деление на ноль";
+        }
+        if (isNaN(res)) {
+          throw new SyntaxError("Синтаксическая ошибка в данных");
+        }
+        break;
+      } catch (e) {
+          alert( "Ошибка: " + e + ", повторите ввод" );
+      }
+    }
+    
+    alert( res );
+  </script>
+</body>
+</html>

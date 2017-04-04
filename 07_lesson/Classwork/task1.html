@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classwork Task 1</title>
+</head>
+<body>
+       <p>Создайте страницу. </p>
+    <p>
+        Разместите на ней произвольное количеством элементов. Разработайте сценарий, который будет по очереди перемещать span с текстом и интервалом в 400мс:
+    </p>
+
+    <script> 
+        var span = document.createElement('span');
+            span.style.color = 'blue';
+            span.style.fontStyle = 'italic';
+            span.innerHTML = 'some moving text';
+        var arr = ['beforeBegin', 'afterBegin', 'beforeEnd', 'afterEnd'];
+        var div = document.body.children[1];
+        var counter = 0;   
+        function moveSpan() {
+            div.insertAdjacentElement(arr[counter++], span);
+            if(counter > arr.length-1) counter = 0;
+        }
+        var timer = setInterval(moveSpan, 400);
+    </script>
+</body>
+</html>

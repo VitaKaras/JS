@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="text" id="field" />
+    <button id="btn" > Click on me! </button>
+    <div id="output" style="margin-top: 10px"> 1 </div>
+
+    <script>
+        var output = document.getElementById('output');
+        window.addEventListener('load', function () {           
+            var btn = document.getElementById('btn');
+
+            btn.addEventListener('click', function () {
+                output.innerHTML = '';
+                var data = document.getElementById('field').value;                
+                output.innerHTML += data;
+                document.getElementById('field').value = '';
+            })            
+        })
+    </script>
+</body>
+</html>
