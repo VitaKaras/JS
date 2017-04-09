@@ -1,0 +1,14 @@
+.containerImages {
+	width: 1020px;
+	position:relative;
+	height: 107px;
+	overflow: visi;
+	border: 1px solid red;
+}
+
+.slide_image {
+	position: absolute;
+	transition: left 0.7s linear;
+	width:170px;
+}
+

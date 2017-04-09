@@ -1,0 +1,1125 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700)
+
+@media (min-width: 768px)
+.navbar-brand animate{
+    margin-left: -15px;
+}
+body{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar-brand > img {
+    height: 60px;
+}
+
+.navbar-small .navbar-brand > img {
+    height: 40px;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    z-index: -99;
+     width: 100%;
+      height: 100%;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+.navbar-nav > li > a:before, .nav-pills > li > a:before {
+    content: "\f0c8";
+    margin: 0 15px;
+    font-family: "FontAwesome";
+    font-size: 5px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffe600;
+}
+nav li {
+    float: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav>.active>a:before{
+       color: transparent;
+} 
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus,
+ .navbar-default .navbar-nav>.active>a:hover{
+    color: #ffe600;
+    background-color: transparent;
+ }
+
+.active {
+    color: #ffe600;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+     color: #ffe600;
+}
+
+.filterMenu > li > a:hover{
+         color: #ffe600;
+}
+
+.nav > li > a {
+    font-weight: normal;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: "Oswald", bold;
+}
+
+.nav > li > a {
+    padding: 0;
+}
+
+
+.navbar-default .nav {
+    padding: 25px 0;
+    height: auto;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.navbar-default{
+ background-color: rgba(19, 19, 22, .3);
+ border-color: transparent;
+   
+}
+
+#home {
+    height: 1050px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sldrText {
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 20px 32.3% 0 32.3%;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 75px;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+.sldrText {
+    font-size: 30px;
+}
+
+.sldrBlock {
+    height: 369px;/*auto*/
+    width: 100%;
+    position: relative;
+    top: 300px;
+    padding: 20px 0;
+    background: rgba(19, 19, 22, .3);
+    margin: 0 auto;
+}
+
+
+.leftButton {
+    position: absolute;
+    top: 480px;
+    background: url("../img/arrow_l.png");
+    left: 22.6%;
+    padding: 9px;
+    border: none;
+}
+
+.rightButton {
+    position: absolute;
+    top: 480px;
+    right: 22.7%;
+    background: url("../img/arrow_r.png");
+    padding: 9px;
+    border: none;
+}
+
+.mainButton {
+    margin: 40px auto 60px;
+    display: block;
+    background-color: #ffe600;
+    height: 57px;
+    width: 230px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Oswald',sans-serif;
+    color: #131316;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.mainButton:hover, .arrowBottom:hover, .contactButton:hover, .logoButtons button:hover {
+    background-color: #131a1d;
+    color: #ffe600;
+}
+
+.divider > span {
+    display: inline-block;
+    width: 170px;
+    background: #ffe600;
+    height: 2px;
+}
+
+.divider{
+    text-align: center;
+}
+
+.ourServices, .portfolio{
+    background-color: #FBFBFB;
+}
+.toDo, .ourWorks{
+    width: 100%;
+    background-color: #fbfbfb;
+    padding-top: 60px;
+}
+
+.toDo h6, .ourWorks h6, .aboutUsCenter h6, .ourClientsCenter h6, .contactUsCenter h6 {
+
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #515151;
+    text-transform: uppercase;
+}
+
+.toDo h1, .ourWorks h1, .ourPortfolioCenter h1, .aboutUsCenter h1, .teamCenter h1,
+.ourClientsCenter h1, .contactUsCenter h1 {
+    position: relative;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Oswald", bold;
+}
+
+
+
+.toDo p, .weDo p, .ourWorks p , .numbersCenter p, .aboutUsCenter p, .teamCenter p{
+    font-size: 15px;
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Oswald", sans-serif;
+    padding-right: 5px;
+    color: #707070;
+    padding-top: 16px;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.weDo p,  .numbersCenter p, .teamPersonsInfoCenter p {
+    color: #ffffff;
+}
+
+.aboutUsBlocks p{
+    padding: 0 0 60px 0;
+    display: inline-block;
+    margin: -40px 0 0 100px;
+    text-align: left;
+}
+
+.services p{
+    padding: 0;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.how p{
+     padding: 0;
+    width: 100%;
+    padding-bottom: 75px;
+}
+
+
+.toDo h1:before, .ourWorks h1:before {
+    margin-left: 46px;
+}
+
+.services {
+    text-align: center;
+}
+
+.wrap {
+    width:105px;
+    height:105px;
+    display:block;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    background-color:#ffe600;
+    margin: 0 auto;
+}
+
+.services span, .how span{
+    font-size:3em;
+    color:#fff;
+    line-height:105px;
+    text-align:center;
+    cursor: pointer;
+}
+
+.navbar-toggle .icon-bar {
+    display: block !important;
+}
+
+.how span{
+    color: #ffe600;
+    line-height: 0;
+    padding-top: 80px;
+}
+
+.services h3, .how h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #131316;
+    font-weight: 700;
+    text-align: center;
+    margin: 25px 0;
+    font-family: "Oswald", bold;
+}
+.how h3{
+    color: #ffffff;
+}
+
+.services, .weDone {
+    width: 100%;
+    margin: 60px auto 70px;
+}
+
+.wDesign, .gDesign, .photo, .dev{
+    position: relative;
+    display: inline-block;
+    margin-right: 33px;
+}
+
+.weDo {
+    position: relative;
+    width: 100%;
+    background: #131a1d;
+}
+
+.weDo h1 {
+    position: relative;
+    line-height: 29px;
+    padding: 60px 0 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffe600;
+    text-transform: uppercase;
+    font-family: "Oswald", bold;
+}
+
+.how {
+    text-align: center;
+}
+
+.analyse, .preparing, .working, .finalyse, .testing, .deliver {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.col-sm-3{
+    padding: 0;
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+}
+
+.filter {
+    display: block;
+    position: relative;
+}
+
+
+
+.filter .filterMenu {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 60px 0;
+    left: 50%;
+    float: left;
+}
+
+.filter .filterMenu li {
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+.filter .filterMenu li:hover {
+    cursor: pointer;
+}
+ul {list-style: none;}
+
+.portfolio li {
+    float: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #515151;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.portfolio li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #ffe600;
+    display: inline-block;
+    margin: 3px 20px;
+}
+
+.portfolio li:first-child:before {
+    display: none;
+}
+
+.filterImage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.filterImage img {
+    width: 16.65%;
+    padding: 0;
+    border: none;
+    float: left;
+}
+
+.ourPortfolio {
+    width: 100%;
+}
+
+.ourPortfolioCenter {
+    position: relative;
+    width: 78%;
+    margin: 65px auto 0;
+    text-align: center;
+}
+
+.arrowBottom {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #ffe600;
+    color: #FFFFFF;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.ourPortfolio p {
+    margin: 30px 0 60px;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    color: #707070;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contactButton {
+    width: 170px;
+    height: 60px;
+    border: none;
+    background-color: #ffe600;
+    color: #FFFFFF;
+    font-family: 'Oswald',sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.numbers {
+    background-color: #131a1d;
+}
+
+.numbersCenter {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.numbers h1 {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 60px 0 10px 0 ;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+
+.numberItem {
+    text-align: center;
+    border: 1px solid #FFE600;
+    padding: 25px;
+}
+
+.row{
+    margin-bottom: 60px;
+}
+
+.numberItem .number {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.numberItem .text {
+    color: #FFE600;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+}
+
+
+.aboutUs {
+    width: 100%;
+
+}
+
+.aboutUsCenter {
+    width: 100%;
+    position: relative;
+    margin: 110px auto 5px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+
+.aboutUsCenter h1:before {
+    margin-left: -8px;
+}
+
+.aboutUsBlocks {
+    margin-top: 95px;
+}
+
+.aboutUsBlocks span {
+    width:70px;
+    height:70px;
+    display:block;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    font-size:30px; color:#fff;
+    line-height:70px;
+    text-align:center;
+    background:#ffe600;
+    float: left;
+    cursor: pointer;
+}
+
+.aboutUsBlocks h6 {
+    display: inline-block;
+    margin: 0 0 0 30px;
+    float: left;
+}
+
+.team {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+.teamCenter {
+    width: 100%;
+    position: relative;
+}
+
+.teamCenter h1 {
+    margin-bottom: 16px;
+}
+
+.teamPersons {
+    position: relative;
+    margin-top: 60px;
+}
+
+.teamPersons h3, .teamPersonsInfo h3 {
+    display: block;
+    color: #ffe600;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+
+.teamPersons h3, .teamPersons h6{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.teamPersonsInfo h3 {
+    padding-bottom: 5px;
+}
+
+.teamPersons h6 {
+    display: block;
+    color: #707070;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 15px;
+    -webkit-box-shadow: 0 2px 0 rgba(223,228,229,1);
+    -moz-box-shadow: 0 2px 0 rgba(223,228,229,1);
+    -o-box-shadow: 0 2px 0 rgba(223,228,229,1);
+    box-shadow: 0 2px 0 rgba(223,228,229,1);
+     margin-bottom: 75px;
+}
+
+.teamPersons .teamPersonsImage {
+    display: block;
+    height: 250px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.teamPersonsInfo {
+    width: 100%;
+    background-color: #131316;
+}
+
+.teamPersonsInfoCenter a{
+    color: #fff;
+}
+
+
+.teamPersonsInfoCenter {
+    position: relative;
+    width: 64%;
+    margin: 0 auto;
+}
+
+.teamPersonsInfoCenter h3 {
+    padding: 65px 0 0;
+    display: inline-block;
+}
+
+.teamPersonsInfoCenter .closeIcon {
+   
+    border: none;
+    text-align: right;
+    font-size: 18px;
+    cursor: pointer;
+    right: 0;
+    top: 59px;
+    padding-left: 630px;
+    color: #fff;
+}
+
+.teamPersonsInfoCenter p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+}
+
+.teamPersonsInfoCenter span {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #FFFFFF;
+    margin-right: 25px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+}
+    
+.teamPersonsInfoCenter a>span {
+
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.skills {
+    width: 100%;
+    background-color: #131a1d;
+}
+
+.skillsCenter {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skillsCenter h1 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 60px;
+}
+
+.skillsCenter p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #898c8e;
+    font-size: 16px;
+    padding: 5px 0 60px;
+}
+
+.skillsDiagram .row{
+    margin-bottom: 65px;
+}
+
+
+.skill{
+    background: #131a1d;
+    width: 132px; 
+    height: 132px;
+    text-align: center;
+    font: 40px/100px Times, serif;
+    border: 6px solid #ffe600;
+    border-right: 6px solid #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.branded-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.percent {
+    display: block;
+    font-size: 30px;
+    letter-spacing: -3px;
+    line-height: 130px;
+    z-index: 10;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+}
+
+.chart {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chart, .chart h3 {
+    color: #ffe600;
+}
+
+
+.ourClients {
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.ourClientsCenter {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.ourClientsCenter h6 {
+    padding: 60px 0 0;
+}
+
+
+.ourClientsCenter h1:before {
+    margin-left: 90px;
+}
+
+.logos{
+    height: 55px;
+}
+
+.logos img {
+    margin-right: 3%;
+    padding-bottom: 60px;
+}
+
+.logoButtons {
+    padding: 0 0 60px;
+    text-align: center;
+}
+
+.logoButtons button{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #ffe600;
+    line-height: 30px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    margin-right: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.quotes {
+    width: 100%;
+    background-color: #131a1d;
+    position: relative;
+}
+
+.quotesCenter {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quotesCenter p {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 65px;
+    width: 50%;
+    padding-bottom: 16px;
+}
+
+.namePerson{
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 16px 0 20px;
+}
+
+.quotesButtons {
+    padding-bottom: 65px;
+}
+
+.quotesButtons button{
+    padding: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #FFFFFF;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button:first-child {
+    background-color: #ffe600;
+}
+
+#logoParade
+{
+    position: relative;
+    margin: 80px auto;
+    margin-bottom: 60px;
+}
+#logoParade div.scrollableArea a
+{
+    display: block;
+    float: left;
+    padding-left: 10px;
+}
+
+.containerImages {
+    width: 1020px;
+    position:relative;
+    height: 107px;
+    overflow: hidden;
+    
+}
+
+.slide_image {
+    position: absolute;
+    transition: left 0.7s linear;
+    width:170px;
+}
+
+
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+.contactUsCenter {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contactUsCenter h6 {
+    padding-top: 60px;
+}
+
+.contactUsCenter p {
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.contactUsCenter h1:before {
+    margin-left: 65px;
+}
+
+.links {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.links div{
+    display: inline-block;
+
+}
+
+.links span {
+    color: #ffe600;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.links h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+.links p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #515151;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+.data{
+
+}
+
+.message {
+    position: relative;
+    width: 100%;
+    background-color: #131a1d;
+}
+
+.messageCenter {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.messageCenter h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.messageCenter p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 40px;
+    padding-top: 0;
+}
+
+.send {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.send input {
+    width: 100%;
+    max-width: 360px;
+    margin: 25px 13px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    height: 55px;
+}
+
+.send textarea {
+    width: 100%;
+    height: 220px;
+    margin: 0 0 25px 0;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder  {
+color: #fff !important;
+}
+ 
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+color: #fff !important;  
+}
+ 
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #fff !important;  
+}
+ 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {  
+color: #fff !important;  
+}
+
+.send button {
+    width: 200px;
+    height: 60px;
+    background-color: #ffe600;
+    color: #131a1d;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 65px;
+}
+
+.footer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #131316;
+}
+
+.footerCenter {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footerCenter p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #89898b;
+    margin: 20px 0 25px;
+}
+
+.footerCenter p span {
+    color: #ffe600;
+    font-weight: 300;
+}
+
+.footerCenter .socials span {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.nav-arrow {
+    width: 60px;
+    height: 60px;
+    background-color: #ffe600;
+    border: none;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.form-group{
+    margin-left: -28px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
