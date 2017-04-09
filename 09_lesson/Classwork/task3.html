@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    Можно вводить только цифры <br>
+    <input type="text" />    
+
+    <script>
+        var input = document.querySelector('input');
+        var element = document.querySelector('label li')
+        input.addEventListener('keyup', function() {
+            if(input.value.match(/\D/g)) {
+                input.style.backgroundColor = "red";
+                alert("Можно вводить только цифры");
+            }
+            else{
+                input.style.backgroundColor = "white";              
+            }
+        });
+    </script>
+    
+</body>
+</html>

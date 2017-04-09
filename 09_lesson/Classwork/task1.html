@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul>Создайте страницу. Реализуйте следующее: 
+         <li>При нажатии комбинации клавиш ctrl + a (регистр не учитывается!) на экран выводится сообщение ‘Данные выбраны’; </li>
+         <li>При нажатии комбинации клавиш ctrl + s (регистр не учитывается!) на экран выводится сообщение ‘Данные сохранены’;</li>
+    </ul>
+    <p>Нажмите CTRL + A чтобы выбрать</p>
+    <p>Нажмите CTRL + S чтобы сохранить</p>
+
+    <script>
+        document.onkeydown = function(e) {
+            if(e.ctrlKey && e.keyCode == 65) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert('Данные выбраны');
+            }
+            if(e.ctrlKey && e.keyCode == 83) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert('Данные сохранены');
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Task 3</title>
+    <style>
+        .blockDiv {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            position: absolute;
+            top: 70px;
+            left: 0;
+        }
+        #btn {
+            display: block;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="info">
+    X: <input id="coordX" type="text">
+    Y: <input id="coordY" type="text">
+    <button id="btn"> Move block </button>
+</div>    
+    <div class="blockDiv" id="block"></div>
+
+    <script>
+         window.onload = function () {
+            var coordX = document.getElementById('coordX');
+            var coordY = document.getElementById('coordY');
+            var block = document.getElementById('block');
+            var btn = document.getElementById('btn');
+            btn.onclick = function (e) {
+                if (coordX.value == "" || coordY.value == "") {
+                    e.stopPropagation();
+                    alert("Введите координаты");
+                } else {
+                    block.style.left = coordX.value + "px";
+                    block.style.top = coordY.value + "px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

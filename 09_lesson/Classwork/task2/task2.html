@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            height: 1500px;
+        }
+        #navigation {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            cursor: pointer;
+        }
+        #navigation.up:before {
+            display: block;
+            content: url(img/arrowUp.png);
+        }
+        #navigation.down:before {
+            display: block;
+            content: url(img/arrowDown.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation"></div>
+
+    <script>
+        window.onload = function() {
+            var label = 0;
+            var navigationDiv = document.getElementById('navigation');
+            
+            window.onscroll = function() {
+                var scrolledWindow = window.pageYOffset;
+                var screenHeight = document.documentElement.clientHeight;
+
+                if(navigationDiv.className == '') {
+
+                    if(scrolledWindow > screenHeight) {
+                        navigationDiv.className = 'up';
+                    }
+                } else if(navigationDiv.className == 'up'){
+
+                    if(scrolledWindow < screenHeight) {
+                        navigationDiv.className = '';
+                    }
+                }
+            };
+            navigationDiv.addEventListener('click', function() {
+                var scrolledWindow = window.pageYOffset;
+                switch(this.className) {
+                    case 'up': 
+                        label = scrolledWindow;
+                        window.scrollTo(0, 0);
+                        this.className = 'down';
+                        break;
+                    case 'down':
+                        window.scrollTo(0, label);
+                        this.className = 'up';
+                }
+            });
+        };
+    </script>
+</body>
+</html>

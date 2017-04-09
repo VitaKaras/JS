@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .selected {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Первый пункт</li>
+        <li>Второй пункт</li>
+        <li>Третий пункт</li>
+    </ul>
+
+    <script>
+        var ul = document.querySelector('ul');
+        ul.addEventListener('click', function(e) {
+            var target = e.target;
+            if(target.tagName != 'LI') return;
+            target.classList.toggle('selected');
+        });
+    </script>
+</body>
+</html>

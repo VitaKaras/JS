@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    #circle {
+      width: 105px;
+      height: 105px;
+      padding-top: 37px;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      background-color: red;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+  <div id="circle">Скидка!</div>
+  <div id="div"></div>
+
+   <script>
+        window.onload = function() {
+          var ball = document.getElementById('circle'),
+              div = document.getElementById('div'),
+              scr_w=screen.width,
+              scr_h=screen.height;
+          ball.onmouseover = function(e) {
+              var x = Math.floor(Math.random()*(scr_w/2 - 150));
+              var y = Math.floor(Math.random()*(scr_w - 150));
+              if(x >= scr_h) x = 0;
+              if(y >= scr_w) y = 0;
+              ball.style.position = 'absolute';
+              ball.style.top = x + 'px';
+              ball.style.left = y + 'px';
+          }
+        }        
+    </script>
+    
+</body>
+</html>
